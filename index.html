@@ -3,87 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="VEEMACK Technical Services provides expert industrial panel wiring, automation, and installation solutions for manufacturing and power systems." />
-  <meta name="keywords" content="VEEMACK Technical Services, industrial panels, electrical wiring, automation, MCC, control panel, power distribution" />
+  <meta name="description" content="VEEMACK Technical Services delivers precision-engineered industrial panels, automation systems, and power solutions tested to international standards." />
+  <meta name="keywords" content="VEEMACK Technical Services, industrial panels, automation, control systems, power distribution, MCC, PLC wiring, electrical engineering" />
   <meta name="author" content="VEEMACK Technical Services" />
   <title>VEEMACK Technical Services</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- Header -->
+  <!-- HEADER -->
   <header>
     <h2>VEEMACK Technical Services</h2>
     <nav aria-label="Main Navigation">
+      <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section class="hero" role="banner">
-    <h1>Reliable Industrial Control Panels</h1>
-    <p>Built for performance, safety, and precision in every connection.</p>
+    <h1>Precision in Every Connection</h1>
+    <p>Designing and building high-performance industrial panels and automation systems with unmatched craftsmanship.</p>
     <button class="btn" onclick="scrollToContact()">Request a Quote</button>
   </section>
 
-  <!-- Services -->
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About VEEMACK Technical Services</h2>
+    <p>VEEMACK Technical Services is a team of certified engineers and technicians with over a decade of experience in industrial automation, power systems, and electrical control engineering. Our mission is to deliver safe, efficient, and durable panel solutions that power industries with confidence. From concept to commissioning, we ensure that every system meets the highest global standards.</p>
+  </section>
+
+  <!-- SERVICES -->
   <section id="services">
     <h2>Our Expertise</h2>
     <div class="services">
       <div class="service">
         <h3> Custom Panel Design</h3>
-        <p>We design high-performance panels that meet your operational and safety requirements.</p>
+        <p>Our engineers design panels tailored to your production environment, integrating precise load calculations, component layouts, and ventilation management. Each design undergoes simulation tests before fabrication to ensure performance and safety compliance.</p>
       </div>
       <div class="service">
-        <h3> Wiring & Testing</h3>
-        <p>Each connection is tested and verified for durability and compliance with international standards.</p>
+        <h3>Wiring & Testing</h3>
+        <p>Every connection is made with certified cables and labeled for traceability. We perform insulation resistance tests, continuity checks, and phase balancing to guarantee reliability under heavy loads.</p>
       </div>
       <div class="service">
         <h3> Installation & Maintenance</h3>
-        <p>Our experts provide end-to-end installation and maintenance for lasting reliability.</p>
+        <p>We handle on-site installation, commissioning, and long-term maintenance with full adherence to safety procedures and verified control logic performance.</p>
+      </div>
+      <div class="service">
+        <h3> Automation & Control Systems</h3>
+        <p>We integrate PLCs, sensors, relays, and HMIs for smart control. Every control logic is tested in simulation before deployment to ensure seamless operation.</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
+  <!-- PROJECTS -->
   <section id="projects">
     <h2>Our Projects</h2>
-    <p>Explore some of our industrial panel works built with precision, safety, and functionality.</p>
+    <p>Each VEEMACK panel reflects precision and safety. We carefully plan layouts for heat dissipation, circuit clarity, and maintenance access. Every wire is labeled, every terminal is tested, and every panel passes final inspection.</p>
 
     <div class="project-gallery">
       <div class="project">
         <img src="images/panel1.jpg" alt="Three-phase busbar alignment inside an industrial panel" />
         <h3>Main Distribution Panel</h3>
-        <p>Color-coded copper busbars aligned for high-load distribution with precision insulation and phase separation.</p>
+        <p>Built with robust copper busbars and color-coded insulation for three-phase distribution. Each section is torque-tested and heat-verified for industrial safety.</p>
       </div>
 
       <div class="project">
         <img src="images/panel2.jpg" alt="Power control panel with MCCBs and terminal wiring" />
         <h3>Power Control Center</h3>
-        <p>Multi-breaker setup with clean terminal wiring, ensuring safety and high-efficiency performance.</p>
+        <p>A masterfully arranged PCC with MCCBs, relays, and clean busbar routing. Components are calibrated and continuity-tested to ensure zero fault tolerance.</p>
       </div>
 
       <div class="project">
         <img src="images/panel3.jpg" alt="Automation panel with PLC modules and relay blocks" />
         <h3>Automation Panel</h3>
-        <p>Integrated PLC and relay systems providing precise control for automated processes.</p>
+        <p>Equipped with PLCs, contactors, and relays, each module is pre-programmed, load-tested, and documented for diagnostics and smooth client handover.</p>
       </div>
 
       <div class="project">
         <img src="images/panel4.jpg" alt="Outdoor enclosure with warning labels and control lights" />
         <h3>Outdoor Power Enclosure</h3>
-        <p>IP-rated outdoor power enclosure designed for reliability, with clear indicators and protective housing.</p>
+        <p>Weather-sealed enclosures rated for outdoor use, fitted with indicators, surge protection, and insulation for maximum reliability.</p>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- CONTACT -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Let’s discuss your next project. We respond within 24 hours!</p>
+    <p>Have a project in mind? Reach out directly or fill out the form below — our engineers will respond within 24 hours.</p>
+
+    <div class="contact-info">
+      <p><strong>📞 Phone:</strong> +234 803 555 7890</p>
+      <p><strong>✉️ Email:</strong> <a href="mailto:info@veemacktech.com">info@veemacktech.com</a></p>
+      <p><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/in/veemack-engineering" target="_blank">linkedin.com/in/veemack-engineering</a></p>
+    </div>
 
     <form id="contactForm" aria-label="Contact Form">
       <label for="name">Full Name</label>
@@ -98,11 +114,13 @@
       <button type="submit" class="btn">Send Message</button>
       <p id="formMessage" aria-live="polite"></p>
     </form>
+
+    <p class="db-info">Note: This form currently sends messages via email only. For database storage, a backend (Node.js, PHP, or Firebase) can be added.</p>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 VEEMACK Technical Services | Built by Joe Akindele </p>
+    <p>© 2025 VEEMACK Technical Services | Built by Joe Akindele 💻</p>
   </footer>
 
   <script src="script.js"></script>
