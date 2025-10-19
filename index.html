@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VEEMACK Technical Services provides expert industrial panel wiring, automation, and installation solutions for manufacturing and power systems." />
+  <meta name="keywords" content="VEEMACK Technical Services, industrial panels, electrical wiring, automation, MCC, control panel, power distribution" />
+  <meta name="author" content="VEEMACK Technical Services" />
+  <title>VEEMACK Technical Services</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h2>VEEMACK Technical Services</h2>
+    <nav aria-label="Main Navigation">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" role="banner">
+    <h1>Reliable Industrial Control Panels</h1>
+    <p>Built for performance, safety, and precision in every connection.</p>
+    <button class="btn" onclick="scrollToContact()">Request a Quote</button>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Expertise</h2>
+    <div class="services">
+      <div class="service">
+        <h3> Custom Panel Design</h3>
+        <p>We design high-performance panels that meet your operational and safety requirements.</p>
+      </div>
+      <div class="service">
+        <h3> Wiring & Testing</h3>
+        <p>Each connection is tested and verified for durability and compliance with international standards.</p>
+      </div>
+      <div class="service">
+        <h3> Installation & Maintenance</h3>
+        <p>Our experts provide end-to-end installation and maintenance for lasting reliability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Our Projects</h2>
+    <p>Explore some of our industrial panel works built with precision, safety, and functionality.</p>
+
+    <div class="project-gallery">
+      <div class="project">
+        <img src="images/panel1.jpg" alt="Three-phase busbar alignment inside an industrial panel" />
+        <h3>Main Distribution Panel</h3>
+        <p>Color-coded copper busbars aligned for high-load distribution with precision insulation and phase separation.</p>
+      </div>
+
+      <div class="project">
+        <img src="images/panel2.jpg" alt="Power control panel with MCCBs and terminal wiring" />
+        <h3>Power Control Center</h3>
+        <p>Multi-breaker setup with clean terminal wiring, ensuring safety and high-efficiency performance.</p>
+      </div>
+
+      <div class="project">
+        <img src="images/panel3.jpg" alt="Automation panel with PLC modules and relay blocks" />
+        <h3>Automation Panel</h3>
+        <p>Integrated PLC and relay systems providing precise control for automated processes.</p>
+      </div>
+
+      <div class="project">
+        <img src="images/panel4.jpg" alt="Outdoor enclosure with warning labels and control lights" />
+        <h3>Outdoor Power Enclosure</h3>
+        <p>IP-rated outdoor power enclosure designed for reliability, with clear indicators and protective housing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Let’s discuss your next project. We respond within 24 hours!</p>
+
+    <form id="contactForm" aria-label="Contact Form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p id="formMessage" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 VEEMACK Technical Services | Built by Joe Akindele </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
