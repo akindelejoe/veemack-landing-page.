@@ -12,10 +12,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     position: sticky;
     top: 0;
     z-index: 10;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    height: 55px;
+    width: auto;
+    border-radius: 8px;
+    background: #fff; /* contrasts header color */
+    padding: 5px;
   }
   
   nav a {
@@ -23,6 +37,7 @@ body {
     text-decoration: none;
     margin: 0 10px;
     font-weight: 500;
+    transition: color 0.3s;
   }
   
   nav a:hover {
@@ -33,7 +48,7 @@ body {
   .hero {
     height: 85vh;
     background: url("https://images.unsplash.com/photo-1629909613654-28e377c37a05") center/cover no-repeat;
-    color: white;
+    color: #002147;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,9 +87,10 @@ body {
     margin: auto;
   }
   
-  h2 {
+   h2{
     text-align: center;
     color: #002147;
+    
   }
   
   /* SERVICES */
@@ -156,6 +172,10 @@ body {
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .service h3 {
+    margin-top: 10%;
+  }
   
   footer {
     background: #002147;
@@ -171,6 +191,7 @@ body {
       flex-direction: column;
       align-items: center;
     }
+
   
     header {
       flex-direction: column;

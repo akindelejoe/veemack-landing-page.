@@ -1,9 +1,9 @@
-// Smooth scroll to contact
+// Smooth scroll to contact section
 function scrollToContact() {
     document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
   }
   
-  // Form validation
+  // Contact form validation
   document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
   
@@ -13,10 +13,11 @@ function scrollToContact() {
     const formMessage = document.getElementById("formMessage");
   
     if (name && email && message) {
-      formMessage.textContent = "✅ Message sent successfully!";
+      formMessage.textContent = " Message sent successfully!";
+      formMessage.style.color = "green";
       this.reset();
     } else {
-      formMessage.textContent = "⚠️ Please fill in all fields.";
+      formMessage.textContent = " Please fill in all fields.";
       formMessage.style.color = "red";
     }
   });
