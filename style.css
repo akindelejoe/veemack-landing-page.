@@ -47,8 +47,10 @@ body {
   /* HERO */
   .hero {
     height: 85vh;
-    background: url("https://images.unsplash.com/photo-1629909613654-28e377c37a05") center/cover no-repeat;
-    color: #002147;
+    background:
+      linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url("images/bg-industrail\ panel.jpg") center/cover no-repeat;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
